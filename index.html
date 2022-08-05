@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>amir</title>
+    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+    <style>
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        width: 40%;
+        padding: 20px;
+        background-color: rgb(82, 144, 198);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-shadow: 10px 10px 10px rgba(237, 235, 240, 0.4),
+          -10px -10px 10px rgba(237, 235, 240, 0.4);
+        gap: 20px;
+        border-radius: 10px;
+      }
+      form h3 {
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(4, 13, 83);
+      }
+      form input {
+        width: 80%;
+        margin: auto;
+        height: 30px;
+        border: none;
+        outline: none;
+        border-radius: 10px;
+        font-size: 18px;
+        padding: 10px;
+        background-color: white;
+      }
+      form textarea {
+        resize: none;
+        min-width: 80%;
+        min-height: 100px;
+        background-color: white;
+        padding: 10px;
+        outline: none;
+      }
+      form .btn {
+        width: 30%;
+        padding: 20px;
+        text-transform: capitalize;
+        background-color: rgb(227, 160, 83);
+        color: white;
+        text-align: center;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 62d0ee18667fb378ad6e67757b1c6336 -->
+    <section class="container">
+      <form action="https://formsubmit.co/aliismailh08@gmail.com" method="POST">
+        <h3>get in touch</h3>
+        <input name="name"
+          type="text"
+          class="name"
+          placeholder="your name please!"
+          required
+        />
+        <input  name="email" type="email" class="email" placeholder="your email" required />
+        <textarea name="message"
+          class="message"
+          cols="30"
+          rows="10"
+          placeholder="HOW WE CAN HELP YOU?"
+          required
+        ></textarea>
+        <input name="submit" class="btn" type="submit" value="send" />
+      </form>
+    </section>
+    <!-- <script>
+      // getting the elements
+      let clientname = document.querySelector("form input.name");
+      let clientemail = document.querySelector("form input.email").value;
+      let clientmessage = document.querySelector("form textarea");
+      function sendemail() {
+        Email.send({
+          Host: "smtp.elasticemail.com",
+          Username: "aliismailh08@gmail.com",
+          Password: "1B5950398B5E560206B41B3C354D0D892BAA",
+          To: "aliismailh08@gmail.com",
+          From: clientemail,
+          Subject: "This is the subject",
+          Body: "And this is the body",
+        }).then((message) => alert(message));
+      }
+    </script> -->
+  </body>
+</html>
