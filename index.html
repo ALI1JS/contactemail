@@ -69,14 +69,22 @@
     <section class="container">
       <form action="https://formsubmit.co/aliismailh08@gmail.com" method="POST">
         <h3>get in touch</h3>
-        <input name="name"
+        <input
+          name="name"
           type="text"
           class="name"
           placeholder="your name please!"
           required
         />
-        <input  name="email" type="email" class="email" placeholder="your email" required />
-        <textarea name="message"
+        <input
+          name="email"
+          type="email"
+          class="email"
+          placeholder="your email"
+          required
+        />
+        <textarea
+          name="message"
           class="message"
           cols="30"
           rows="10"
@@ -87,21 +95,26 @@
       </form>
     </section>
     <!-- <script>
-      // getting the elements
-      let clientname = document.querySelector("form input.name");
-      let clientemail = document.querySelector("form input.email").value;
-      let clientmessage = document.querySelector("form textarea");
-      function sendemail() {
+      // the required element:
+      let form = document.querySelector("form");
+      let name = document.querySelector("form .name").value;
+      let email = document.querySelector("form .email").value;
+      let message = document.querySelector("form .message").value;
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
         Email.send({
           Host: "smtp.elasticemail.com",
           Username: "aliismailh08@gmail.com",
           Password: "1B5950398B5E560206B41B3C354D0D892BAA",
           To: "aliismailh08@gmail.com",
-          From: clientemail,
+          From: email,
           Subject: "This is the subject",
-          Body: "And this is the body",
+          Body: `name:${name}
+                 email:${email}
+                 message:${message}
+          `,
         }).then((message) => alert(message));
-      }
-    </script> -->
+      }); -->
+    </script>
   </body>
 </html>
